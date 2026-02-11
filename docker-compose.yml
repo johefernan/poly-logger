@@ -1,0 +1,43 @@
+services:
+  go:
+    build: ./services/go
+    environment:
+      LOG_INTERVAL: ${LOG_INTERVAL:-1s}
+      TOTAL_LOGS: ${TOTAL_LOGS:--1}
+
+  java:
+    build: ./services/java
+    environment:
+      LOG_INTERVAL: ${LOG_INTERVAL:-1s}
+      TOTAL_LOGS: ${TOTAL_LOGS:--1}
+
+  python:
+    build: ./services/python
+    environment:
+      LOG_INTERVAL: ${LOG_INTERVAL:-1s}
+      TOTAL_LOGS: ${TOTAL_LOGS:--1}
+
+  ruby:
+    build: ./services/ruby
+    environment:
+      LOG_INTERVAL: ${LOG_INTERVAL:-1s}
+      TOTAL_LOGS: ${TOTAL_LOGS:--1}
+
+  rust:
+    build: ./services/rust
+    environment:
+      LOG_INTERVAL: ${LOG_INTERVAL:-1s}
+      TOTAL_LOGS: ${TOTAL_LOGS:--1}
+
+  javascript:
+    build: ./services/javascript
+    environment:
+      LOG_INTERVAL: ${LOG_INTERVAL:-1s}
+      TOTAL_LOGS: ${TOTAL_LOGS:--1}
+
+  typescript:
+    build: ./services/typescript
+    environment:
+      LOG_INTERVAL: ${LOG_INTERVAL:-1s}
+      TOTAL_LOGS: ${TOTAL_LOGS:--1}
+
